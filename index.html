@@ -35,6 +35,16 @@
             margin: 0 auto;
         }
 
+        .image-link {
+            display: block;
+            cursor: pointer;
+            transition: opacity 0.3s ease;
+        }
+
+        .image-link:hover {
+            opacity: 0.9;
+        }
+
         .social-links {
             margin-top: 2rem;
             display: flex;
@@ -48,10 +58,9 @@
             justify-content: center;
             width: 50px;
             height: 50px;
-            background-color: #f5f3ed;
+            background-color: transparent;
             border-radius: 50%;
             transition: all 0.3s ease;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
         }
 
         .social-link:hover {
@@ -80,7 +89,9 @@
 </head>
 <body>
     <div class="container">
-        <img src="./assets/merge_radio_stay_tuned.png" alt="Merge Radio - Stay Tuned">
+        <a href="https://instagram.com/merge.radio" target="_blank" rel="noopener noreferrer" class="image-link" aria-label="Visit Merge Radio on Instagram">
+            <img src="./assets/merge_radio_stay_tuned.png" alt="Merge Radio - Stay Tuned">
+        </a>
 
         <div class="social-links">
             <a href="https://instagram.com/merge.radio" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Follow us on Instagram">
